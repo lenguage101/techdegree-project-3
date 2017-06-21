@@ -1,0 +1,168 @@
+* {
+	margin: 0;
+	font-family: 'Merriweather', serif;
+}
+/*************
+HELPER CLASSES
+***************/
+.container {
+	width: 95%;
+	margin: 0 auto;
+}
+.top {
+	border-top: 2px solid rgb(30, 34, 84);
+}
+.separate {
+	padding: 5px 0;
+}
+/***** 
+HEADER
+******/
+header {
+	padding: 50px 0;
+	background-color: rgb(30, 34, 84);
+	color: #fff;
+	text-align: center;
+	font-size: 24px;
+}
+/**********
+DIV.CONTENT
+***********/
+.info {
+	text-align: center;
+    padding: 30px 0px;
+    border-bottom: 5px solid rgb(30, 34, 84);
+    margin-bottom: 3px;
+}
+.signUp {
+	font-size: 20px;
+	font-weight: 700;
+	color: rgb(30, 34, 84);
+	padding-bottom: 15px;
+}
+.signUpInfo {
+	color: #96999e;
+	font-size: 16px;
+}
+/****
+FORM
+*****/
+/*************
+FIELDSET.FIRST
+**************/
+fieldset {
+	border: none;
+	padding: 0;
+}
+legend {
+	padding: 20px 0 10px 0; 
+	font-size: 20px;
+	font-weight: 700;
+	color: rgb(30, 34, 84);
+}
+#first label {
+	display: block;
+	padding: 10px 0;
+	color: #96999e;
+}
+#first input, #first select {
+    border-radius: 5px;
+    background: #d3d3d3;
+    width: 100%;
+    color: #96999e;
+    padding: 15px 0px;
+    border: 1px solid #d3d3d3;
+    outline: none;
+}
+#first input:focus, #first select:focus {
+	border: 2px solid rgb(30, 34, 84);
+}
+input[type="text"], input[type="email"] {
+	font-style: italic;
+	text-align: right;
+}
+#zipCode {
+	margin-bottom: 30px;
+}
+/**************
+FIELDSET.SECOND
+***************/
+#second {
+	color: #96999e;
+}
+.top label {
+	display: block;
+	padding-bottom: 20px;
+}
+.newsletter {
+	display: block;
+	padding: 20px 0;
+}
+input:checked + label:before{	
+	background: #5bc0de;
+	color:#fff;
+}
+.commenting {
+    display: block;
+    padding: 20px 0 10px 0;
+}
+textarea {
+	width: 100%;
+	display: block;
+	background: #d3d3d3;
+	border-radius: 5px;
+	outline: none;
+	margin-bottom: 20px;
+	padding: 0;
+	height: 150px;
+}
+textarea:focus {
+	border: 2px solid rgb(30, 34, 84);
+}
+button[type="submit"] {
+	width: 100%;
+	padding: 30px 0;
+	color: #fff;
+	background: #50c9c7;
+	border: 1px solid #50c9c7;
+	border-radius: 5px;
+}
+form + p {
+	text-align: center;
+	padding: 30px 0 150px 0;
+	color: #96999e;
+}
+
+/************
+MEDIA QUERIES
+**************/
+@media screen and (min-width: 768px){
+	.container {
+		width: 50%;
+	}
+	.info {
+		padding: 50px 0 40px 0;
+	}
+	legend {
+   	 	padding: 40px 0 20px 0;
+	}
+	.whole {
+		width: 100%;
+		padding: 15px 0;
+	}
+	.one-quarter {
+		display:inline-block;
+		width: 25%;
+	}
+	.three-quarters {
+		display: inline-block;
+		float: right;
+		width: 75%;
+	}
+	.commenting {
+		padding: 20px 0;
+	}
+	textarea {
+    	margin-bottom: 30px;
+	}
+}
